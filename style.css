@@ -1,0 +1,87 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+        :root{
+            --White: hsl(0, 0%, 100%);
+            --Light_gray: hsl(212, 45%, 89%);
+            --Grayish_blue: hsl(220, 15%, 55%);
+            --Dark_blue: hsl(218, 44%, 22%);
+            --Font:'Outfit', sans-serif;
+            --radius:10px;
+        }
+        *{
+            box-sizing: border-box;
+            font-family:var(--Font) ;
+            font-size: 15px;
+            height: fit-content;
+        }
+        html{
+            margin:0;
+            padding: 0;
+            background-color: var(--Light_gray);
+            height: 100%;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .container{
+            min-width: 276px;
+            max-width: 276px;
+            width: 30%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            border-radius: 10px;
+            background-color: var(--White);
+            border-radius: var(--radius);
+        }
+        .qr_container{
+            display: flex;
+            padding: 10px;
+        }
+        .qr_container img{
+            width: 100%;
+            border-radius: var(--radius);
+        }
+        .text_container{
+           
+            padding: 0 10px;
+        }
+        .title{
+                font-weight: 700;
+            }
+        .para{
+            color: var(--Grayish_blue);
+        }
+        @media only screen and (max-width: 470px){
+            .container{
+                width:80%;
+                height: auto;
+                min-width: 50%;
+                max-width: 90%;
+                min-height: auto;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            .qr_container{
+            height: auto;
+            
+            width: 100%;
+            
+        }
+        .qr_container img{
+            height: 100%;
+            width: 100%;
+            
+        }
+        
+    }
+    
